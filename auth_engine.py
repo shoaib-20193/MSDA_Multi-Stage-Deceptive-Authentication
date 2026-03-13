@@ -1,13 +1,13 @@
 from deception_engine import check_stage1, determine_false_positive, detect_honey_pin, verify_stage2
 from logger import log_event, log_attack
 
-# States
+#States
 START = "START"
 REAL_STAGE2 = "REAL_STAGE2"
 FAKE_STAGE2 = "FAKE_STAGE2"
 HONEYPOT = "HONEYPOT"
 REJECT = "REJECT"
-
+#Stage 1 Authentication
 def stage1_auth(pin):
     """
     Process stage 1 authentication.
@@ -26,7 +26,7 @@ def stage1_auth(pin):
         
     log_attack(pin, "stage1", "Failed attempt, rejected.")
     return REJECT
-
+#Stage 2 Authentication
 def stage2_auth(pin, state):
     """
     Process stage 2 authentication.
@@ -41,7 +41,6 @@ def stage2_auth(pin, state):
             return REJECT
             
     elif state == FAKE_STAGE2:
-        # Any PIN entered here is a trapped attacker
         log_attack(pin, "stage2", "Trapped attacker entered PIN during FAKE_STAGE2.")
         return HONEYPOT
         

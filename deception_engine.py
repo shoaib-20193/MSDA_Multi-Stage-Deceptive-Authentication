@@ -2,6 +2,7 @@ import random
 from config import REAL_STAGE1_PIN, HONEY_STAGE1_PINS, FALSE_POSITIVE_RATE
 from logger import log_attack
 
+#This file provides with helper functions for the auth_engine
 def check_stage1(pin):
     """Check if the provided PIN is the real stage 1 PIN."""
     return pin == REAL_STAGE1_PIN

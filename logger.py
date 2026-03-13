@@ -1,6 +1,6 @@
 import datetime
 from config import LOG_FILE
-
+#logs attacker events and activity
 def log_event(event_string):
     """Log a general system event with a timestamp."""
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")

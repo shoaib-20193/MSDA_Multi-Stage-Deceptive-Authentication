@@ -1,7 +1,7 @@
 import time
 import sys
 from logger import log_honeypot_command
-
+#simulates the honeypot
 def launch_honeypot():
     """
     Launch a fake interactive CLI environment for trapped attackers.
