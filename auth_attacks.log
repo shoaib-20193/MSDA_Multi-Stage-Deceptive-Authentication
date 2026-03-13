@@ -1,0 +1,14 @@
+[2026-03-13 21:41:31] EVENT: Application startup
+[2026-03-13 21:42:14] EVENT: Stage 1 success (Real)
+[2026-03-13 21:42:29] EVENT: Stage 2 success. Full authentication granted.
+[2026-03-13 21:42:30] EVENT: User granted access to standard functionality.
+[2026-03-13 21:43:29] EVENT: Application startup
+[2026-03-13 21:43:33] ALERT: Attack detected at stage1. PIN attempt: '0000'. Honey PIN detected.
+[2026-03-13 21:43:33] HONEYPOT CMD: SESSION_STARTED
+[2026-03-13 21:43:43] HONEYPOT CMD: ls
+[2026-03-13 21:45:02] HONEYPOT CMD: cat secrets.txt
+[2026-03-13 21:45:11] HONEYPOT CMD: exit
+[2026-03-13 21:45:33] EVENT: Application startup
+[2026-03-13 21:45:37] ALERT: Attack detected at stage1. PIN attempt: '5555'. Failed attempt, rejected.
+[2026-03-13 21:46:12] EVENT: Application startup
+[2026-03-13 21:46:23] ALERT: Attack detected at stage1. PIN attempt: '5555'. Failed attempt, rejected.
