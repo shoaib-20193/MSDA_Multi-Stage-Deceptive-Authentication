@@ -1,0 +1,12 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+auth_attacks.log
+*.log
+
+# IDEs
+.vscode/
+.idea/
